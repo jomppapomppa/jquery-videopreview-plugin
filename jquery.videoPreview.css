@@ -1,0 +1,81 @@
+.vp-item {
+	position: relative;
+	display: block;
+	background: #000;
+	cursor: pointer;
+	overflow: hidden;
+}
+.vp-image {
+	opacity: .5;
+	display: block;
+	height: auto;
+}
+.vp-item:hover .vp-image {
+	opacity: 1;
+}
+.vp-item > a {
+	display: inline-block;
+	/*width: 100%;
+	height: 100%;*/
+}
+/*.vp-item.fluid > a {
+	position: absolute;
+	top: 0;
+}*/
+.vp-caption {
+	display: block;
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+	font-size: 14pt;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px #000;
+}
+.vp-caption.top {
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px;
+	font-size: 12pt;
+	text-align: left;
+}
+.vp-button {
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+	background: #fff;
+	opacity: .75;
+	box-shadow: 0 1px 2px #000;
+	border-radius: 3px;
+}
+.vp-button:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid #000;
+}
+.vp-item:hover .vp-button {
+	opacity: .9;
+}
+.vp-item.fluid {
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+}
+.vp-item.fluid .vp-image {
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
